@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kwave"
+version = "0.0.1"
+authors = [{ name = "Taylor Nie", email = "tnie@wustl.edu" }]
+description = "Python wrapper for k-Wave's C++ binaries (kSpaceFirstOrder)"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: LGPL",
+    "Operating System :: OS Windows",
+]
+dependencies = ["numpy", "scipy", "matplotlib", "h5py"]
+
+
+[tool.setuptools]
+packages = ["kwave"]
